@@ -110,70 +110,116 @@
 // personObject.getAddress()
 ///need to fix///
 
-//Encapsulation//
-class Car {
-    #year;
-    constructor(brand, model, year) {
-        this.brand = brand;
-        this.model = model;
-        this.#year = year;
+// //Encapsulation//
+// class Car {
+//     #year;
+//     constructor(brand, model, year) {
+//         this.brand = brand;
+//         this.model = model;
+//         this.#year = year;
+//     }
+//     getYear() {
+//         return this.#year;
+//     }
+//     getBrand() {
+//         return this.brand;
+//     }
+// }
+
+// const myCar = new Car('Ford', 'Mustang', 2000);
+// console.log(myCar.getBrand());
+// console.log(myCar.getYear());
+// ///Inheritance
+
+// class Person {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+//     greet() {
+//         console.log("Hi! I am " + this.name);
+//     }
+// }
+// class Student extends Person {
+//     constructor(name, age, studendId) {
+//         super(name, age);
+//         this.studendId = studendId;
+//     }
+// }
+
+// const personObj = new Person("Hari", 25);
+// personObj.greet();
+
+// const studentObj = new Student("Prakash", 28, 10000);
+// studentObj.greet();
+
+// ///classwork//
+// class Rectangle {
+//     constructor(width, height) {
+//         this.width = width;
+//         this.height = height;
+//       }
+//       getArea(){
+        // return (this.width * this.height)
+//       }
+//       getParameter(){
+//         return(2 * (this.width + this.height))
+//       }
+// }
+// let object = new Rectangle (12 , 20)
+// console.log(object.getArea());
+// console.log(object.getParameter());
+
+// class Vechicle {
+//     constructor(make, model, year){
+//         this.make = make;
+//         this.model = model;
+//         this.year = year;
+//     }
+//   displayCar (){
+//     let display = "make" + this.make + "model" + this.model + "year" + this.year
+//     }
+//  }   
+// let vechicle1 = new Vechicle ("lambo", "danger" , 2020)
+// console.log(vechicle1.displayCar());
+
+// Write a JavaScript program that creates a class called BankAccount with properties for account number, account holder name, and balance. Include methods to deposit, withdraw, and transfer money between accounts. Create multiple instances of the BankAccount class and perform operations such as depositing, withdrawing, and transferring money.
+
+class BankAccount {
+    constructor (accountNumber , accountHolderName, balace) {
+        this.accountHolderName = accountHolderName
+        this.accountNumber = accountNumber
+        this.balace = balace
     }
-    getYear() {
-        return this.#year;
+    deposit (money){
+        this.balace = this.balace + money
     }
-    getBrand() {
-        return this.brand;
+    Withdraw (money){
+       
     }
+    
 }
 
-const myCar = new Car('Ford', 'Mustang', 2000);
-console.log(myCar.getBrand());
-console.log(myCar.getYear());
-///Inheritance
 
-class Person {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-    greet() {
-        console.log("Hi! I am " + this.name);
-    }
-}
-class Student extends Person {
-    constructor(name, age, studendId) {
-        super(name, age);
-        this.studendId = studendId;
-    }
-}
 
-const personObj = new Person("Hari", 25);
-personObj.greet();
 
-const studentObj = new Student("Prakash", 28, 10000);
-studentObj.greet();
 
-///classwork//
-class Rectangle {
-    constructor(width, height) {
-        this.width = width;
-        this.height = height;
-      }
-      getArea(){
-        return (this.width * this.height)
-      }
-      getParameter(){
-        return(2 * (this.width + this.height))
-      }
-}
-let object = new Rectangle (12 , 20)
-console.log(object.getArea());
-console.log(object.getParameter());
+// Recursion
 
-class Vechicle {
-    constructor(make, model, year){
-        this.make = make;
-        this.model = model;
-        this.year = year;
-    }
-}
+// function factorial(n){
+//     ///base condition
+//     if (n  <= 1){
+//         // 5 * factorial (4)
+//         // 4 * factorial (3)
+//         // 3 * factorial (2)
+//         // 2 * factorial (1)
+        
+//         return 1
+//     }
+//     //5 * 24
+//     //4 * 6
+//     //3 * 2
+//     //2 * 1
+//     return n * factorial (n - 1);
+// }
+// console.log(factorial(5));
